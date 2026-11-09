@@ -3,11 +3,13 @@ var CONFIG={
   bookingUrl:"https://calendly.com/shawasutosh/30min",
   whatsappNumber:"918981399603",
   email:"simplysuitable.investments@gmail.com",
+  moneyClarityUrl:"https://script.google.com/macros/s/AKfycbz7iR3RkMyOdBJSZuvZ9bQB9XA5pCjVZyxLN1oa4tvusUuTsClYOSYezGX6NY5jpdt0_A/exec",
+  riskProfileUrl:"https://forms.gle/Mh9TCLVuaAqBf5K27",
   checklistUrl:"",          /* add your checklist form link to show the checklist section */
   registrations:""          /* e.g. insurance / NPS registration details; shown in the footer when filled */
 };
 function placeholder(u){return !u||u.indexOf("YOUR")>-1||u.indexOf("XXXX")>-1}
-var map={book:CONFIG.bookingUrl,whatsapp:"https://wa.me/"+CONFIG.whatsappNumber+"?text="+encodeURIComponent("Hi, I found you through Simply Suitable Investments."),email:"mailto:"+CONFIG.email,checklist:CONFIG.checklistUrl};
+var map={book:CONFIG.bookingUrl,whatsapp:"https://wa.me/"+CONFIG.whatsappNumber+"?text="+encodeURIComponent("Hi, I found you through Simply Suitable Investments."),email:"mailto:"+CONFIG.email,checklist:CONFIG.checklistUrl,clarity:CONFIG.moneyClarityUrl,risk:CONFIG.riskProfileUrl};
 document.querySelectorAll("[data-link]").forEach(function(a){var u=map[a.getAttribute("data-link")];if(!placeholder(u)){a.href=u;if(u.indexOf("http")===0){a.target="_blank";a.rel="noopener"}}});
 document.querySelectorAll("[data-needs]").forEach(function(s){if(placeholder(map[s.getAttribute("data-needs")]))s.hidden=true});
 var rg=document.getElementById("regs");if(rg&&CONFIG.registrations){rg.textContent=CONFIG.registrations;rg.hidden=false}
