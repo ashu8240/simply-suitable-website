@@ -1,12 +1,19 @@
-/* EDIT THESE FOUR LINES BEFORE GOING LIVE */
-var CONFIG={bookingUrl:"https://calendly.com/YOUR-LINK",whatsappNumber:"91XXXXXXXXXX",email:"hello@YOURDOMAIN.in",checklistUrl:"https://forms.gle/YOUR-CHECKLIST-FORM"};
+/* EDIT THESE VALUES BEFORE GOING LIVE */
+var CONFIG={
+  bookingUrl:"https://calendly.com/shawasutosh/30min",
+  whatsappNumber:"918981399603",
+  email:"simplysuitable.investments@gmail.com",
+  checklistUrl:"",          /* add your checklist form link to show the checklist section */
+  registrations:""          /* e.g. insurance / NPS registration details; shown in the footer when filled */
+};
 function placeholder(u){return !u||u.indexOf("YOUR")>-1||u.indexOf("XXXX")>-1}
-var map={book:CONFIG.bookingUrl,whatsapp:"https://wa.me/"+CONFIG.whatsappNumber+"?text="+encodeURIComponent("Hi, I found you through Simply Suitable."),email:"mailto:"+CONFIG.email,checklist:CONFIG.checklistUrl};
+var map={book:CONFIG.bookingUrl,whatsapp:"https://wa.me/"+CONFIG.whatsappNumber+"?text="+encodeURIComponent("Hi, I found you through Simply Suitable Investments."),email:"mailto:"+CONFIG.email,checklist:CONFIG.checklistUrl};
 document.querySelectorAll("[data-link]").forEach(function(a){var u=map[a.getAttribute("data-link")];if(!placeholder(u)){a.href=u;if(u.indexOf("http")===0){a.target="_blank";a.rel="noopener"}}});
+document.querySelectorAll("[data-needs]").forEach(function(s){if(placeholder(map[s.getAttribute("data-needs")]))s.hidden=true});
+var rg=document.getElementById("regs");if(rg&&CONFIG.registrations){rg.textContent=CONFIG.registrations;rg.hidden=false}
 var y=document.getElementById("yr");if(y)y.textContent=new Date().getFullYear();
 var wa=document.getElementById("waForm");
 if(wa)wa.addEventListener("submit",function(e){e.preventDefault();
-if(placeholder(CONFIG.whatsappNumber)){alert("WhatsApp number not set yet. Edit site.js.");return}
 var n=document.getElementById("wn").value.trim(),i=document.getElementById("wi").value,m=document.getElementById("wm").value.trim();
 var t="Hi, I’m "+n+". I’d like to talk about: "+i+"."+(m?" "+m:"");
 window.open("https://wa.me/"+CONFIG.whatsappNumber+"?text="+encodeURIComponent(t),"_blank")});
