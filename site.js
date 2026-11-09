@@ -25,3 +25,21 @@ var calc=function(){var p=+document.getElementById("amt").value,a=+document.getE
 if(!(p>0&&yr>0&&a>=0))return;var r=a/1200,n=yr*12,fv=r?p*((Math.pow(1+r,n)-1)/r)*(1+r):p*n,inv=p*n;
 document.getElementById("oi").textContent=inr(inv);document.getElementById("og").textContent=inr(fv-inv);document.getElementById("ov").textContent=inr(fv)};
 sf.addEventListener("input",calc);calc()}
+
+(function(){
+var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+if("IntersectionObserver" in window&&!rm){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll("main section").forEach(function(s){if(s.getBoundingClientRect().top>innerHeight){s.classList.add("rv");io.observe(s)}})}
+function picker(sel,out,fn){var bs=document.querySelectorAll(sel);bs.forEach(function(b){b.addEventListener("click",function(){bs.forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});fn(b,document.getElementById(out))})})}
+function lead(o,t,rest){o.textContent="";var s=document.createElement("b");s.textContent=t;o.appendChild(s);o.appendChild(document.createTextNode(rest))}
+picker(".chip","sitText",function(b,o){o.textContent=b.getAttribute("data-r")});
+picker(".goal","goalText",function(b,o){lead(o,b.getAttribute("data-n")+". ","We’d work out: "+b.getAttribute("data-q"))});
+picker(".step","stepText",function(b,o){lead(o,b.getAttribute("data-n")+". ",b.getAttribute("data-d"))});
+var f=document.querySelector(".step");if(f)f.click();
+var pf=document.getElementById("planForm");
+if(pf){var money=function(x){return "₹"+Math.round(x).toLocaleString("en-IN")};
+var plan=function(){var c=+document.getElementById("pc").value,n=+document.getElementById("py").value,i=+document.getElementById("pi").value,e=+document.getElementById("pe").value,r=+document.getElementById("pr").value;
+if(!(c>0&&n>0&&i>=0&&e>=0&&r>=0))return;var rm=r/1200,N=n*12,fc=c*Math.pow(1+i/100,n),eg=e*Math.pow(1+rm,N),gap=Math.max(0,fc-eg),m=gap===0?0:(rm?gap*rm/((Math.pow(1+rm,N)-1)*(1+rm)):gap/N);
+document.getElementById("pfc").textContent=money(fc);document.getElementById("peg").textContent=money(eg);document.getElementById("pgap").textContent=money(gap);document.getElementById("pm").textContent=money(m)};
+pf.addEventListener("input",plan);plan()}
+})();
