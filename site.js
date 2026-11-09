@@ -1,6 +1,6 @@
 /* EDIT THESE VALUES BEFORE GOING LIVE */
 var CONFIG={
-  bookingUrl:"https://calendly.com/shawasutosh/30min",
+  bookingUrl:"https://calendly.com/simplysuitable-investments/30min",
   whatsappNumber:"918981399603",
   email:"simplysuitable.investments@gmail.com",
   moneyClarityUrl:"https://script.google.com/macros/s/AKfycbz7iR3RkMyOdBJSZuvZ9bQB9XA5pCjVZyxLN1oa4tvusUuTsClYOSYezGX6NY5jpdt0_A/exec",
