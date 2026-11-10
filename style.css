@@ -83,3 +83,18 @@ footer a{color:#7FD6D8}footer a:hover{color:#fff}
 .fcopy{margin-top:8px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14)}.fcopy p{margin:0}
 .meet{display:grid;grid-template-columns:160px 1fr minmax(260px,340px);gap:32px;align-items:center}
 @media(max-width:760px){.fgrid{grid-template-columns:1fr;gap:12px}.meet{grid-template-columns:1fr;gap:20px}}
+
+.mc{max-width:640px;margin:0 auto}.mc-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+.mc .ruler{display:flex;gap:3px;margin:0 0 8px}.mc .ruler i{flex:1;height:16px;background:#DDE6E4;border-radius:2px}.mc .ruler i.on{background:var(--teal)}
+.mc-meta{display:flex;justify-content:space-between;align-items:center;font-size:.9rem;color:var(--muted);margin-bottom:12px}
+.mc-q{font:600 1.25rem/1.35 var(--head);color:var(--navy);margin:0 0 6px;max-width:none}.mc-hint{color:var(--muted);font-size:.95rem;margin:0 0 16px;max-width:none}
+.mc-opt{display:block;width:100%;text-align:left;padding:14px 16px;margin:0 0 10px;background:#fff;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-weight:600;color:var(--ink);min-height:48px;cursor:pointer}
+.mc-opt:hover{border-color:var(--teal)}
+.mc-link{background:none;border:0;color:var(--muted);padding:8px 0;text-decoration:underline;font:inherit;font-size:.9rem;cursor:pointer}
+.mc-score{font:700 3.2rem/1 var(--head);color:var(--navy);margin:0}.mc-score small{font-size:1.4rem;color:var(--muted);font-weight:400}
+.mc-status{font:700 1.25rem var(--head);color:var(--navy);margin:6px 0 4px}
+.mc-card h2{font-size:1.15rem;margin:22px 0 8px}
+.mc-item{border-left:4px solid #A33A2A;padding:2px 0 2px 12px;margin:0 0 12px}.mc-item.mid{border-color:#9A6B00}.mc-item b{display:block}
+.mc-more{margin:0;color:var(--muted);font-size:.9rem}.mc-clear{color:#1B7A4B;font-weight:600;margin:6px 0 0}
+.mc-next{background:var(--mist);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.mc-fine{font-size:.82rem;color:var(--muted);margin-top:22px;line-height:1.55;max-width:none}

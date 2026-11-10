@@ -3,7 +3,8 @@ var CONFIG={
   bookingUrl:"https://calendly.com/simplysuitable-investments/30min",
   whatsappNumber:"918981399603",
   email:"simplysuitable.investments@gmail.com",
-  moneyClarityUrl:"https://script.google.com/macros/s/AKfycbz7iR3RkMyOdBJSZuvZ9bQB9XA5pCjVZyxLN1oa4tvusUuTsClYOSYezGX6NY5jpdt0_A/exec",
+  moneyClarityUrl:"/money-clarity-check",
+  clarityEndpoint:"https://script.google.com/macros/s/AKfycbz7iR3RkMyOdBJSZuvZ9bQB9XA5pCjVZyxLN1oa4tvusUuTsClYOSYezGX6NY5jpdt0_A/exec",   /* your Apps Script web app; results are saved to your Sheet through it */
   riskProfileUrl:"https://forms.gle/Mh9TCLVuaAqBf5K27",
   checklistUrl:"",          /* add your checklist form link to show the checklist section */
   registrations:""          /* e.g. insurance / NPS registration details; shown in the footer when filled */
