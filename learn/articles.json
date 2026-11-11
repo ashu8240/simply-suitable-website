@@ -6,5 +6,37 @@
   "date": "2026-11-10",
   "minutes": 5,
   "summary": "What actually happens each month when you invest through a SIP, how units and NAV work, a simple worked example, and what a SIP cannot do."
+ },
+ {
+  "slug": "what-is-nav",
+  "title": "What NAV means, and what it doesn’t",
+  "category": "Basics",
+  "date": "2026-11-11",
+  "minutes": 5,
+  "summary": "NAV is the price of one unit of a scheme. How it is worked out, why a low NAV is not a bargain, and where to find it."
+ },
+ {
+  "slug": "sip-vs-lump-sum",
+  "title": "SIP or lump sum? How to think about the choice",
+  "category": "Basics",
+  "date": "2026-11-11",
+  "minutes": 6,
+  "summary": "A SIP and a lump sum are two ways of putting money in. Neither is always better. How they differ, a made-up example, and questions to ask yourself."
+ },
+ {
+  "slug": "what-is-a-risk-profile",
+  "title": "What a risk profile is, and why it matters",
+  "category": "Risk",
+  "date": "2026-11-11",
+  "minutes": 5,
+  "summary": "Your risk profile describes how much risk you can take and how much you are comfortable taking. What it covers, and how it relates to a scheme’s riskometer."
+ },
+ {
+  "slug": "emergency-fund-before-investing",
+  "title": "Why an emergency fund comes before investing",
+  "category": "Getting started",
+  "date": "2026-11-11",
+  "minutes": 5,
+  "summary": "An emergency fund keeps a surprise from forcing you to sell investments at a bad time. What it is, how much people often keep, where it lives, and how to build one."
  }
 ]
