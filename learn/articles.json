@@ -46,5 +46,29 @@
   "date": "2026-11-11",
   "minutes": 7,
   "summary": "A step-by-step way to estimate the corpus your spending may need on retirement day, with a made-up worked example and why small changes in assumptions matter so much."
+ },
+ {
+  "slug": "what-is-an-expense-ratio",
+  "title": "Expense ratio explained: what you pay and why it matters",
+  "category": "Costs",
+  "date": "2026-11-12",
+  "minutes": 5,
+  "summary": "The expense ratio is the yearly cost of running a scheme, already reflected in the NAV. What it covers, how small differences add up, and how to compare costs sensibly."
+ },
+ {
+  "slug": "how-to-read-a-factsheet",
+  "title": "How to read a mutual fund factsheet, with a made-up example",
+  "category": "Basics",
+  "date": "2026-11-12",
+  "minutes": 6,
+  "summary": "A factsheet is a monthly summary of a scheme. What each section tells you, what to look for, and how to read a performance table without being misled."
+ },
+ {
+  "slug": "what-is-kyc-for-mutual-funds",
+  "title": "What KYC is, and how it works for mutual funds",
+  "category": "Getting started",
+  "date": "2026-11-12",
+  "minutes": 5,
+  "summary": "KYC is a one-time identity check you complete before your first mutual fund investment. What it involves, what you need, common problems, and how to stay safe."
  }
 ]
